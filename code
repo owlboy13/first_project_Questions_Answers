@@ -21,7 +21,6 @@ print('Responda as perguntas!')
 print()
 
 qtd_acertos = 0
-# for para listas as perguntas e manipular o dict
 for questao in pergunta_1:
     print('Pergunta:',questao['Pergunta'])
     print()
@@ -31,7 +30,7 @@ for questao in pergunta_1:
         print(f'{i})', opcao)      
     print()
 
-    escolha = input('escolha uma das alternativas: ')
+    escolha = input('Escolha uma das alternativas: ')
 
     acertou = False
     qtd_opcoes = len(opcoes)
@@ -46,6 +45,7 @@ for questao in pergunta_1:
                 acertou = True
     
     if acertou:
+        qtd_acertos += 1
         print('Acertou 👌 ')
     else:
         print('Errou 👎 ')
@@ -54,7 +54,6 @@ print()
 
 print('Você acertou', qtd_acertos)
 print('de', len(pergunta_1), 'perguntas.')
-
 
 
 
